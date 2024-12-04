@@ -44,17 +44,17 @@ class Cursor {
             self.hide();
         }).on('mouseleave', 'iframe', () => {
             self.show();
-        }).on('mouseenter', '[data-cursor]', function() {
+        }).on('mouseenter', '[data-cursor]', function () {
             self.setState(this.dataset.cursor);
-        }).on('mouseleave', '[data-cursor]', function() {
+        }).on('mouseleave', '[data-cursor]', function () {
             self.removeState(this.dataset.cursor);
-        }).on('mouseenter', '[data-cursor-text]', function() {
+        }).on('mouseenter', '[data-cursor-text]', function () {
             self.setText(this.dataset.cursorText);
-        }).on('mouseleave', '[data-cursor-text]', function() {
+        }).on('mouseleave', '[data-cursor-text]', function () {
             self.removeText();
-        }).on('mouseenter', '[data-cursor-stick]', function() {
+        }).on('mouseenter', '[data-cursor-stick]', function () {
             self.setStick(this.dataset.cursorStick);
-        }).on('mouseleave', '[data-cursor-stick]', function() {
+        }).on('mouseleave', '[data-cursor-stick]', function () {
             self.removeStick();
         });
     }
